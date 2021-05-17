@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Start */
+body {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-right {
+    text-align: right;
+}
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.top-nav,
+.top-nav .nav-right ul,
+.logo,
+.navigation .container,
+.main .container {
+    display: flex;
+}
+
+.top-header {
+    background: #2b2b2b;
+    color: #fff;
+}
+.top-nav {
+    padding: .75rem 0;
+    justify-content: space-between;
+}
+
+.top-nav:after {
+    padding: 0.285rem;
+}
+
+.top-nav:first-child {
+    font-size: .75rem;
+}
+
+.top-nav, .nav-right, .top-nav div {
+    align-items: center;
+}
+
+.top-nav .nav-right {
+    text-align: right;
+}
+
+.top-nav .nav-right ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: .75rem;
+}
+
+.top-nav .nav-right ul li:after {
+    content: "|";
+    color: #fff;
+    padding: 0 .5rem;
+}
+
+.top-nav .nav-right ul li:last-child:after {
+    content: "";
+    padding: 0;
+}
+
+.navigation {
+    background: #000;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.navigation .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .logo div:first-child {
+    margin-right: 1rem;
+}
+
+.navigation .logo .brand {
+    font-size: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+
+.navigation .main-nav nav ul {
+    display: flex;
+}
+.navigation .main-nav nav ul li:after {
+    content: "|";
+    padding: 0 .65rem;
+    color: #575757;
+}
+
+.navigation .main-nav nav ul li:last-child:after {
+    content: "";
+    padding: 0;
+}
+
+.navigation .main-nav nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.carousel {
+    background: cadetblue;
+    height: 28rem;
+
+}
+.carousel .container {
+    display: flex;
+    align-items: center;
+}
+.carousel .container .carousel-img, .carousel .container .carousel-title {
+    flex-grow: 1;
+}
+
+.carousel .container .carousel-title h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+.carousel .container .carousel-title h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.price {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.price .text {
+    position: absolute;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-25%, -25%);
+
+}
+.main {
+    margin-top: 2rem;
+}
+
+.main .categories {
+    border: 1px solid #e2e2e2;
+    border-radius: .4rem;
+}
+
+.main .categories li {
+    padding: .7rem;
+    border-bottom: 1px solid #e3e3e3;
+}
+.main .categories li:first-child {
+    font-weight: 600;
+    font-size: 1rem;
+    color: cadetblue;
+}
+
+
